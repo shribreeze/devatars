@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    background: white;
+    background-image:url('ava.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+#d ul{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    top:0%;
+    left: -33px;
+}
+#d li{
+    list-style: none;
+}
+#d ul li a:hover{
+    color:rgb(105, 226, 135);
+    text-shadow:inset -1px -1px 2px rgba(0,0,0,0.2),
+    24px 24px 10px rgba(0,0,0,0.1) ;
+}
+#d ul li a{
+    font-family: Axiforma;
+    padding: 5px 32px;
+    margin: 24px 0;
+    text-decoration: none;
+    color: #0f0f0f;
+    font-weight: bold;
+    transition:.5s;
+}
+#Upper ul{
+    position: absolute;
+    transform: translate(-50%,-50%);   
+    margin: 0;
+    padding: 0;
+    display:flex;
+    top:4%;
+    margin-left: 50.0%;
+}
+#Upper li{
+    list-style: none;
+}
+#Upper ul li a{
+    position: relative;
+    display:block;
+    font-family: sans-serif;
+    padding: 10px 16px;
+    margin: 16px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color:#000000;
+    font-weight: bold;
+    transition:.5s;
+}
+#Upper ul li a:hover{
+    color: rgb(253, 182, 51);
+}
+#Upper ul li a:before{
+    content: '';
+    position: absolute;
+    top:-8%;
+    left: 18%;
+    width: 75%;
+    height: 100%;
+    border-bottom: 2px solid rgb(253, 182, 51);
+    opacity:0;
+    transition: 0.5s;
+    z-index: -1;
+    animation: animate 0.75s linear infinite;
+}
+@keyframes animate{
+    0%,50%{
+        width:0;
+        color: rgb(253, 182, 51);
+    }
+}
+#Upper ul li a:hover:before{
+    opacity: 1;
+}
+
+#Upper ul li a:after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 15%;    
+    width: 80%;
+    height: 100%;
+    transform: scale(0);
+    transition:.5s;
+    z-index: -1;
+}
+#Upper ul li a:hover:after{
+    transform: scale(1);
+}
+nav li{
+    display: inline-flex;
+    list-style: none;
+    line-height: 30px;
+}
+nav ul{
+    margin-top: 0.2%;
+    position: relative;
+    display: flex;
+    float:none;
+    list-style: none;
+    margin-left:75%;
+}
+nav li a{
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    position: calc(80px);
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius:32%;
+    color: #ffffff;
+    box-shadow:inset -1px -1px 2px rgba(0,0,0,0.2),
+               2px 2px 5px rgba(0,0,0,0.2);
+    transition:0.5s;  
+}
+nav li a:hover
+{
+    color: rgb(255, 255, 255);
+    transform:translateX(-10px);
+    box-shadow:inset -1px -1px 2px rgba(0,0,0,0.2),
+               24px 24px 10px rgba(0,0,0,0.1);
+}
+nav li a .fa{
+    color: rgb(255, 255, 255);
+    position:relative;
+    z-index: 1;
+}
+nav li a:before{
+    content:'';
+    position:absolute;
+    top: 6px;
+    left:6px;
+    right:6px;
+    bottom:6px;
+    border-radius:40%;
+    border:2px solid rgpa(0,0,0,0.1);
+}
+nav li:nth-child(1) a:before{
+    background: #4686da;
+
+}
+nav li:nth-child(2) a:before{
+    background: rgb(57, 88, 119);    
+}
+nav li:nth-child(3) a:before{
+    background: green;
+}
+#f button{
+    width: 100px;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 15px 0px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: rgb(7, 7, 7);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    top: -32px;
+    margin-left:90%;
+    margin-top:-20%;
+
+}
+#f span{
+    background: #009688;
+    height: 200%;
+    width:0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+#f button:hover span{
+    width: 100%;
+}
+#f button:hover{
+    border: none;
+}
+
+
+.dropdown-content {
+    margin-top: -5%;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f4;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ffffff;}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 16%;
+  border-radius: 10px;
+  margin-left: 10%;
+}
+
+.card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.6);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.cardf {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 16%;
+  border-radius: 10px;
+  margin-right: 10%;
+  float: right;
+  margin-top: -21%;
+}
+
+.cardf:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.6);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+h1{
+  font-family: 'Teko', sans-serif;
+  text-transform: capitalize;
+  font-size: 4rem;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  margin-top: -0.8%;
+  min-height: calc(10vh - 16px);
+  background: white;
+  position: relative;
+  background: #cccccc;
+  color: #000;
+}
+
+h1:before{
+  content: attr(data-text);
+  position: absolute;
+  background: linear-gradient(#f70000, #f89200, #f8f501, #038f00,#0168f8, #a200f7);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 100% 90%;
+  line-height: 0.9;
+  clip-path: ellipse(80px 80px at -2.54% -9.25%);
+  animation: swing 5s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes swing{
+  0%{
+     -webkit-clip-path: ellipse(80px 80px at -2.54% -9.25%)
+    clip-path: ellipse(80px 80px at -2.54% -9.25%)
+  }
+  50%{
+    -webkit-clip-path: ellipse(80px 80px at 49.66% 64.36%);
+    clip-path: ellipse(80px 80px at 49.66% 64.36%);
+
+  }
+  100%{
+     -webkit-clip-path: ellipse(80px 80px at 102.62% -1.61%);
+    clip-path: ellipse(80px 80px at 102.62% -1.61%);
+  }
+}
+
+
+
+.bottom-container {
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  border-radius: 0px 0px 0px 0px;
+  margin-top: 10%;
+}
+
+
