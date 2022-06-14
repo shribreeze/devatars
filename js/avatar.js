@@ -20,6 +20,7 @@ var current_fabriccolors = "545454";
 var current_backgroundcolors = "ffffff";
 var current_glassopacity = 0.5;
 $(document).ready(function() {
+    console.log("DOCUMENT READY")
     $("body").delegate("#menu_list button","click",function() {
         var idx = $(this).attr("id");
         if (idx=="download") {
